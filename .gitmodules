@@ -1,7 +1,7 @@
 [submodule "cash-manager-back"]
 	path = cash-manager-back
 	url = git@github.com:dupuysylvain/cash-manager-back.git
-	branch = dev
+	branch = master
 [submodule "cash-manager-mobile"]
 	path = cash-manager-mobile
 	url = git@github.com:dupuysylvain/cash-manager-mobile.git
