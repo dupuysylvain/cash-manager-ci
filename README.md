@@ -4,25 +4,15 @@
 
 To clone and update your project on your machine:
 
-* Clone the project:
-
-```
-  git clone git@github.com:dupuysylvain/cash-manager-ci.git
-```
-  
-* Go into the project folder:
-
-```
-  cd cash-manager-ci
-```
-  
 * Initialize all submodules:
 
 ```
+  git clone git@github.com:dupuysylvain/cash-manager-ci.git
+  cd cash-manager-ci
   git submodule update --init --recursive --remote
 ```
   
-* Update all files and checkout to a specific branch:
+* Update all sub projects (api and mobile):
 
 ```
   git submodule foreach git pull origin master
@@ -34,3 +24,5 @@ To clone and update your project on your machine:
 ```
 docker-compose up
 ```
+
+> When all dockers are up, you can access to the api at `localhost:8080` and get the apk on `localhost/cashmanager.apk`

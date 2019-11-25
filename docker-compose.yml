@@ -14,10 +14,17 @@ services:
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
 
-  time-manager-api:
+  cash-manager-api:
     build: ./cash-manager-back
     ports:
       - "8080:8080"
     depends_on:
       - db
-    restart: always
+    restart: on-failure
+
+  cash-manager-mobile:
+    build: ./cash-manager-mobile
+    ports:
+      - "80:80"
+    depends_on:
+      - cash-manager-api
