@@ -28,3 +28,9 @@ To clone and update your project on your machine:
   git submodule foreach git pull origin master
   git submodule foreach git checkout master
 ```
+
+## Run docker
+
+```
+docker-compose up
+```
