@@ -7,7 +7,7 @@ To clone and update your project on your machine:
 * Clone the project:
 
 ```
-git clone git@github.com:dupuysylvain/cash-manager-ci.git
+  git clone git@github.com:dupuysylvain/cash-manager-ci.git
 ```
   
 * Go into the project folder:
